@@ -1,0 +1,26 @@
+.memories{
+  background-color: $greyF9;
+  padding: 40px;
+  text-align: center;
+  @include respond-to('small'){
+    padding: 16px;
+  }
+  .bm-card-image-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+    margin: 24px 0;
+    text-align: left;
+    @include respond-to('small'){
+      display: flex;
+      overflow: auto;
+    }
+  }
+  &__pagination {
+    margin-top: 50px;
+    padding-bottom: 109px;
+    button {
+      outline-color: #296140 ;
+    }
+  }
+}

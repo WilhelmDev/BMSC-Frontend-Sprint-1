@@ -1,0 +1,28 @@
+
+.v-breadcrumbs {
+  li {
+    a {
+      color: $black !important;
+    }
+  }
+  li:last-child .v-breadcrumbs__item{
+    color: $green !important;
+    line-height: 35px;
+    font-family: 'uni_neueheavy';
+  }
+  .v-breadcrumbs__divider{
+    color: $black !important;
+  }
+  &.bm-breadcrumb{
+    justify-content: center;
+    .breadcrumb-circle-separator{
+      width: 4px;
+      height: 4px;
+      background-color: $green;
+      border-radius: 4px;
+    }
+    li:last-child .v-breadcrumbs__item{
+      color: $black !important;
+    }
+  }
+}

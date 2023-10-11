@@ -1,0 +1,21 @@
+.blog-card-banx {
+  .bm-card {
+    width: 400px;
+    height: fit-content;
+  }
+
+  .v-slide-group__content {
+    justify-content: center;
+  }
+
+  &__blog {
+    background: linear-gradient(267.91deg, #E3FFE6 -4.36%, rgba(255, 255, 255, 0) 109.44%), #E7F5F8;
+    opacity: 0.8;
+  }
+
+  &__box {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+}

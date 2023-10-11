@@ -1,0 +1,47 @@
+.bm-simulator-cta {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    @include respond-to('small'){
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .main-area {
+        height: auto;
+        margin-left: auto;
+        .calc-icon {
+            width: 84px;
+            height: 85px;
+            margin-bottom: 53px;
+        }
+    }
+    .image-group {
+        position: relative;
+        width: 338px;
+    }
+
+    .image1 {
+        margin-bottom: 8px;
+    }
+    .image3 {
+        float: left;
+        margin-left: 8px;
+        position: absolute;
+        top: -30px;
+    }
+    .price-label-1 {
+        position: absolute;
+        top: -30px;
+        left: 30px;
+    }
+    .price-label-2 {
+        position: absolute;
+        bottom: 100px;
+        left: -30px;
+    }
+    .price-label-3 {
+        position: absolute;
+        top: 370px;
+        right: 60px;
+    }
+}

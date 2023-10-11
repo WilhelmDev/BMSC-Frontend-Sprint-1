@@ -1,0 +1,6 @@
+.checked-list {
+  .list > li {
+    list-style-type: "✓  ";
+    color: $light-icon;
+  }
+}

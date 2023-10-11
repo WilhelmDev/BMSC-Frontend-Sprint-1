@@ -1,0 +1,18 @@
+.index-banx {
+  &__image {
+    width: 180px;
+  }
+
+  .box {
+    font-size: 18px;
+    line-height: 150%;
+    font-style: normal;
+  }
+
+  .listed-products {
+    h2 {
+      color: black !important;
+      line-height: 120%;
+    }
+  }
+}

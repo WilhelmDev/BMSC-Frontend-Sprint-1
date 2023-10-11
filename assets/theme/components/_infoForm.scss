@@ -1,0 +1,45 @@
+.info-form {
+  background: $white;
+  box-shadow: 0px 5px 20px rgba(41, 97, 64, 0.1);
+  border-radius: 6px;
+  @include respond-to('small'){
+    border-radius: 0;
+    box-shadow: none;
+  }
+  &.section {
+    margin-top: -5px;
+    .header {
+      border-radius: 0;
+    }
+  }
+  .header {
+    height: 56px;
+    background-color: $green;
+    border-radius: 6px 6px 0 0;
+    @include respond-to('small'){
+      border-radius: 0;
+    }
+    h6 {
+      color: $white;
+    }
+  }
+  .content {
+    .input-label {
+      margin: 4px 0;
+    }
+    input, textarea {
+      width: 100%;
+      outline: none;
+      border: 2px solid #DDE9DF;
+      &[readonly]
+      {
+        background-color: $grey;
+        color: $green;
+        border: 2px solid #DDE9DF
+      }
+    }
+  }
+  .strong-small-text {
+    line-height: 19.6px;
+  }
+}

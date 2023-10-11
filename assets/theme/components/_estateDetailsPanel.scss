@@ -1,0 +1,17 @@
+.estate-details-panel {
+  .white-bg {
+    background-color: $white;
+  }
+  .main-image {
+    height: 584px;
+  }
+  .secondary-image {
+    height: 192px;
+  }
+  .image-container {
+    border-radius: 4px 4px 0 0;
+  }
+  .info-container {
+    border-radius: 0 0 4px 4px;
+  }
+}

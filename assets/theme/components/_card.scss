@@ -1,0 +1,119 @@
+.bm-card {
+  height: 100%;
+  &.square-images {
+    max-width: 100%;
+    @include respond-to('small'){
+      width: 100%;
+    }
+  }
+  &.v-sheet.v-card {
+    border-radius: 8px;
+    background-color: $smooth-green;
+  }
+  .image-container {
+    height: 300px;
+    @include respond-to('small'){
+      width: 100%;
+      height: 225px !important;
+    }
+    .image {
+      height: 300px;
+      @include respond-to('small'){
+        width: 100%;
+        height: 225px;
+      }
+    }
+    &.square-images {
+      height: auto;
+      width: 100%;
+      @include respond-to('small'){
+        width: 100%;
+        height: auto !important;
+      }
+      .image {
+        height: 500px;
+        @include respond-to('small'){
+          width: 100%;
+          height: auto !important;
+        }
+      }
+    }
+  }
+  .card-box-and-image {
+    width: 100%;
+  }
+
+  .image {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .card-general {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 2.5em 5em 2.5em;
+    position: static;
+    .card-title {
+      height: 100px;
+      @include respond-to('small'){
+        width: 100%;
+        height: 80px;
+      }
+    }
+    .card-button {
+      display: flex;
+      flex-direction: initial;
+      padding: 0px;
+      position: absolute;
+      bottom: 2.5em;
+    }
+    .card-sec-button {
+      display: flex;
+      flex-direction: initial;
+      padding: 0px;
+      position: absolute;
+      bottom: 2.0em;
+    }
+  }
+
+  &.light-green-bg {
+    background-color: $light-green !important;
+    box-shadow: none !important;
+    &, .image {
+      border-radius: 0 !important;
+    }
+  }
+
+  &.credit-card {
+    .image-container {
+
+    }
+    .card-general {
+      height: 100%;
+    }
+  }
+}
+
+.card-slider {
+  width: 100%;
+  .card-container {
+    max-width: 300px;
+  }
+  .bm-card {
+    .image-container {
+      height: 300px;
+    }
+  }
+  .v-slide-group__next, .v-slide-group__prev {
+    @include fontSize(42px);
+    background-color: transparent;
+    color: $green;
+    min-width: 6% !important;
+  }
+  .v-slide-group__content{
+    justify-content: center;
+  }
+  .v-window__next, .v-window__prev, .v-window__next:hover, .v-window__prev:hover{
+    background-color: transparent;
+    margin: 0;
+  }
+}

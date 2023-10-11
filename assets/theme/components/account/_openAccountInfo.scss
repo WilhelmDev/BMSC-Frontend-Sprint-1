@@ -1,0 +1,18 @@
+.open-account-info {
+  &.theme--light.v-tabs > .v-tabs-bar {
+    background-color: transparent;
+    .v-tabs-slider-wrapper{
+      display: block;
+      color: $md-green;
+    }
+    .v-tab {
+      text-transform: none;
+      &.v-tab--active{
+        color: $md-green;
+      }
+    }
+  }
+  .theme--light.v-tabs-items {
+    background-color: transparent;
+  }
+}

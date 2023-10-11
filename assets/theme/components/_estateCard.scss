@@ -1,0 +1,22 @@
+.bm-estate-card {
+  background-color: $white;
+  border-radius: 10px;
+  border: 1px solid $darker-grey;
+  height: 100%;
+  position: relative;
+  .image {
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+  .featured {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-color: $white;
+    border-radius: 2px;
+    .strong-small-text {
+      line-height: 25px;
+    }
+  }
+}

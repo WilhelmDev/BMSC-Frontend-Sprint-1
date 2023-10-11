@@ -1,0 +1,60 @@
+.bm-help {
+  background: $light-green-gradient;
+  .divider {
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.help-agencies {
+  .main-phone {
+    border: 2px solid #A0AAA566;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .theme--light {
+    .v-slide-group__next--disabled,
+    .v-slide-group__prev--disabled {
+      display: none;
+    }
+    .v-tabs-bar {
+      height: 40px;
+    }
+    .v-tabs-slider {
+      color: $green !important;
+    }
+    .v-tabs-bar {
+      .v-tab {
+        @include fontSize(18px);
+        text-transform: capitalize;
+        &:not(.v-tab--active) {
+          color: $black;
+        }
+        &--active {
+          color: $green;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+.raw-input {
+  input {
+    border: none !important;
+  }
+}
+
+.questions-result {
+  .search-btn {
+    margin-top: 32px;
+    margin-left: 10px;
+  }
+  .search-input {
+    width: 387px;
+  }
+  .site-result {
+    cursor: pointer;
+    padding: 24px;
+  }
+}

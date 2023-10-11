@@ -1,0 +1,7 @@
+.bm-loans {
+  .theme--light.v-btn-toggle {
+    @include respond-to('small'){
+      border-radius: 0px !important;
+    }
+  }
+}

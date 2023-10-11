@@ -1,0 +1,37 @@
+.news-card{
+  background: $greyF9;
+  padding: 16px 40px;
+  width: 100%;
+  text-align: center;
+  @include respond-to('small'){
+    padding: 24px 12px;
+  }
+  .news-container{
+    display: inline-flex;
+    height: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    text-align: left;
+    @include respond-to('small'){
+      display: flex;
+      overflow: auto;
+      flex-wrap: unset;
+    }
+    .bm-card + .bm-card{
+      margin-left: 16px;
+    }
+
+    .bm-card {
+      .blog-type {
+        color: $md-grey;
+        font-weight: bold;
+      }
+
+      .read-more {
+        color: $green;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}

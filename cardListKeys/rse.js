@@ -1,0 +1,9 @@
+export const CAROUSEL = "carousel";
+export const BENEFITS2 = "benefits-2";
+export const BENEFITS = "benefits";
+export const BENEFITS3 = "benefits-3";
+export const TUTORIALS = "tutorials";
+export const PROGRAMS = "programs";
+export const QUALIFICATIONS = "qualifications";
+export const REPORTS = "reports";
+export const DOCUMENTS = "documents";

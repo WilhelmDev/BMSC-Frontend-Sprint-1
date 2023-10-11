@@ -1,0 +1,27 @@
+.bm-footer-mobile {
+    &__content {
+        background-color: $dark-green;
+    }
+    .expansion-card {
+        background-color: $dark-green !important;
+        &__header {
+            color: $white;
+        };
+        &__content {
+            color: $white;
+            .item-name {
+                margin-bottom: 20px;
+                text-align: center;
+                &__last {
+                    margin-bottom: 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    small{
+        display: block;
+        color: $footer-grey;
+        padding: 8px 0;
+    }
+}

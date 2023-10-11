@@ -1,0 +1,20 @@
+.bm-phone-list {
+    .theme--light.v-icon {
+        color: $md-green;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .phone-list-title {
+        margin-bottom: 72px;
+    }
+    .phone-item {
+        margin-bottom: 43px;
+        .department {
+            color: $md-green;
+            font-weight: 700;
+        }
+    }
+    .phone-list-main {
+        width: 1026px;
+    }
+}

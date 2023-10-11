@@ -1,0 +1,17 @@
+.especialProgram {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+  &__image-ctn {
+    border-bottom-color: $light-green;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    .v-image {
+      max-width: 650px;
+    }
+  }
+  &__subTitle {
+    font-size: 18px;
+    font-family: $font-family-bold;
+  }
+}

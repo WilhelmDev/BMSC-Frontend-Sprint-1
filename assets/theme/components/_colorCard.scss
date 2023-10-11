@@ -1,0 +1,37 @@
+.bm-color-card {
+  height: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  
+  &.bg {
+    &-green {
+      background-color: $bg-green;
+    }
+    &-light-green {
+      background-color: $bg-light-green;
+    }
+    &-light-gold {
+      background-color: $bg-light-gold;
+    }
+    &-light-blue {
+      background-color: $bg-light-blue;
+    }
+    &-light-red {
+      background-color: $bg-light-red;
+    }
+    &-grey {
+      background-color: $bg-grey;
+    }
+    // S2
+    // &-yellow {
+    //   background-color: $bg-yellow;
+    // }
+    // S2
+  }
+  .v-icon {
+    font-size: 48px;
+    &::before {
+      margin-left: 0;
+    }
+  }
+}

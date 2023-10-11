@@ -1,0 +1,42 @@
+.listed-products{
+  background-color: $light-green;
+  .theme--light.product-card.v-card:not(.v-sheet--outlined) {
+    background-color: transparent;
+    box-shadow: none;
+    width: 250px;
+    text-align: center;
+    @include respond-to('small'){
+      width: 200px;
+    }
+    .v-image{
+      margin: auto;
+      height: 150px;
+      width: 100px;
+      @include respond-to('small'){
+        height: 60px;
+        width: 80px;
+      }
+      .v-image__image{
+        width: 100px;
+        background-size: contain;
+        @include respond-to('small'){
+          width: 80px;
+        }
+      }
+    }
+  }
+
+  .v-slide-group__prev .v-icon, .v-slide-group__next .v-icon{
+    @include fontSize(42px);
+    color: $green;
+  }
+  .v-slide-group__content{
+    justify-content: center;
+  }
+
+  h5 {
+    line-height: 22px;
+    height: 40px;
+    @include fontSize(22px);
+  }
+}

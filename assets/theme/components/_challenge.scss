@@ -1,0 +1,9 @@
+.challenge {
+  background-color: $white;
+
+  &__box {
+    .main-box {
+      width: auto;
+    }
+  }
+}

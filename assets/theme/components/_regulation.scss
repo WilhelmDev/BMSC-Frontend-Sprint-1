@@ -1,0 +1,17 @@
+.regulation {
+  background: $smooth-green;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: $black !important;
+
+     p {
+       margin: 0;
+     }
+  }
+
+  &__emoji {
+    font-size: 40px;
+  }
+}

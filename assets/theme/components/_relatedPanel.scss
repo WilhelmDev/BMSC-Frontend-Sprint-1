@@ -1,0 +1,103 @@
+.card-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.card-carousel {
+  display: flex;
+  justify-content: center;
+  width: 1080px;
+  @include respond-to('medium'){
+    width: 800px;
+  }
+  @include respond-to('small'){
+    width: 100%;
+  }
+
+  &--overflow-container {
+    overflow: hidden;
+    @include respond-to('small'){
+      overflow: auto;
+    }
+  }
+
+  &--nav__left,
+  &--nav__right {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    @include border-radius(50%);
+    z-index: 10;
+    &::before{
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin: 12px;
+      padding: 6px;
+      display: block;
+      box-sizing: border-box;
+      border-top: 2px solid $green;
+      border-right: 2px solid $green;
+    }
+    &[disabled] {
+      opacity: 0;
+    }
+    @include respond-to('small'){
+      display: none;
+    }
+  }
+  &--nav__left::before {
+    transform: rotate(-135deg);
+    margin: 12px 14px;
+    &:active {
+      transform: rotate(-135deg) scale(0.9);
+    }
+  }
+  &--nav__right::before {
+    transform: rotate(45deg);
+    &:active {
+      transform: rotate(45deg) scale(0.9);
+    }
+  }
+}
+
+.card-carousel-cards {
+  display: flex;
+  transition: transform 0.5s ease-out;
+  transform: translatex(0px);
+}
+.card-carousel--card{
+  margin: 0 6px;
+  cursor: pointer;
+  background-color: $grey !important;
+  border-radius: 3px;
+  z-index: 3;
+  margin-bottom: 2px;
+  padding: 48px 32px;
+  min-width: 250px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);
+  @include respond-to('medium'){
+    width: 250px;
+  }
+  &:hover {
+    background-color: $light-icon !important;
+    color: $white;
+
+    .link {
+      color: $white;
+      cursor: pointer;
+    }
+  }
+}
+.related-panel--banx {
+  .card-carousel--card {
+    &:hover {
+      background: linear-gradient(107.63deg, #166BD4 -5.45%, #8FCF00 94.14%) !important;
+      box-shadow: 0 2px 30px rgba(0, 0, 0, 0.05) !important;
+    }
+  }
+}

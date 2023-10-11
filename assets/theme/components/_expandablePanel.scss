@@ -1,0 +1,21 @@
+.expandable-panel {
+  .card {
+    background: $white;
+    box-shadow: 0px 5px 20px rgba(41, 97, 64, 0.1);
+    border-radius: 6px;
+    .v-image {
+      border-radius: 6px;
+    }
+    .expandable-container {
+      border-top: 1px solid #ECF2ED;
+    }
+    .expanded-container {
+      background-color: $grey;
+      border-radius: 6px;
+      max-width: 90%;
+    }
+    .one-item {
+      max-width: 40%;
+    }
+  }
+}

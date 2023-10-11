@@ -1,0 +1,146 @@
+.filter-section{
+  min-width: 300px;
+  margin-top: 50px;
+}
+.catalog-section{
+  .theme--light {
+    .v-tabs-bar {
+      height: 40px;
+      margin-bottom: 16px;
+    }
+    .v-tabs-slider {
+      color: $green !important;
+    }
+    .v-tabs-bar {
+      .v-tab {
+        @include fontSize(18px);
+        text-transform: capitalize;
+        &:not(.v-tab--active) {
+          color: $black;
+        }
+        &--active {
+          color: $green;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  .filter {
+    color: $md-green;
+    font-family: $font-family-bold;
+    font-size: 16px;
+  }
+  .ticket-container{
+    display: inline-flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    min-height: 630px;
+    max-height: 630px;
+    overflow-y: scroll;
+    @include respond-to('small'){
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      min-height: 400px;
+      max-height: 400px;
+      .ticket {
+        min-width: 100% ;
+      }
+    }
+    .ticket-title {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 4;
+      word-break: break-word;
+    }
+    .benefit {
+      line-height: 22px;
+      text-transform: lowercase;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+    }
+  }
+}
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+  .filter {
+    color: $md-green;
+    font-family: $font-family-bold;
+    font-size: 20px;
+  }
+  .big-text {
+    font-family: $font-family-heavy;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 13px;
+  }
+
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

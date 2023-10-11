@@ -1,0 +1,45 @@
+.ticket{
+  display: flex;
+  box-sizing: content-box;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 2px $darker-grey);
+  position: relative;
+  border-radius: 10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image:radial-gradient(circle at 100% 50%, rgba($white,0) 20px, $white (24px));
+  background-position: top left, top right;
+  width: 370px;
+  height: 160px;
+  &:hover {
+    filter: drop-shadow(0px 5px 11px $darker-grey);
+  }
+  @include respond-to('small'){
+    width: 290px;
+  }
+  &.relevant{
+    background-image:radial-gradient(circle at 100% 50%, rgba($cream,0) 20px, $cream (24px));
+  }
+  .image-container{
+    min-width: 50%;
+    max-width: 50%;
+    border-right: 1px dashed $extra-green;
+    .v-image{
+      height: 160px;
+      background-color: $white;
+    }
+  }
+  .details-section{
+    width: 50%;
+    padding: 8px 14px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.ticket-modal{
+  .v-image{
+    padding-bottom: 16px;
+    border-bottom: 1px dashed $extra-green;
+  }
+}

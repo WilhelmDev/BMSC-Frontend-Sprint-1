@@ -1,0 +1,26 @@
+.error-404 {
+  &__title {
+    font-size: 66px;
+    font-family: $font-family-base;
+  }
+  &__subtitle {
+    font-size: 32px;
+    font-family: $font-family-base;
+    text-align: center;
+  }
+  &__message {
+    margin-top: 66px;
+    margin-bottom: 35px;
+    font-size: 21px;
+    font-family: $font-family-base;
+    text-align: center;
+  }
+  &__links {
+    padding-bottom: 30px;
+    color: $md-green;
+    font-size: 18px;
+    font-family: $font-family-bold;
+    text-align: center;
+    cursor: pointer;
+  }
+}

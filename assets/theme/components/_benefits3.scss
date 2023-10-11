@@ -1,0 +1,15 @@
+.benefits3 {
+  &__title1 {
+    font-size: 24px;
+    font-family: $font-family-bold;
+    color: $md-green;
+    display: inline-block;
+  }
+  &__title2 {
+    font-size: 28px;
+    font-family: $font-family-bold;
+    color: $dark-green;
+    display: inline-block;
+
+  }
+}

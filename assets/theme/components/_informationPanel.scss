@@ -1,0 +1,13 @@
+.information-panel {
+  background-color: $grey;
+
+  .box {
+    margin: 15px auto 0;
+    display: flex;
+    justify-content: center;
+
+    .main-box {
+      padding: 0 40px;
+    }
+  }
+}

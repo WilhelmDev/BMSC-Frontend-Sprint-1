@@ -1,0 +1,6 @@
+.related-news{
+  max-width: 250px;
+  @include respond-to('small'){
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+.box {
+  flex: none !important;
+
+  .img {
+    width: 24px;
+    top: -15px;
+    left: 15px;
+  }
+
+  .main-box {
+    margin-right: 15px;
+
+    @media (max-width: 600px) {
+      margin-right: 0;
+    }
+  }
+
+  &__span {
+    padding: 0 15px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 120%;
+  }
+
+  .linear-gradient-blue-green {
+    background: linear-gradient(90.53deg, #166BD4 -1.59%, #8FCF00 100%);
+    color: white;
+    //width: fit-content;
+  }
+
+  .linear-gradient-yellow-red {
+    background: linear-gradient(90.53deg, #FFE53B -1.59%, #FF2525 100%);
+    color: white;
+    //width: fit-content;
+  }
+
+  .linear-gradient-purple-fuchsia {
+    background: linear-gradient(90.53deg, #4A3CDB -1.59%, #FF0A6C 100%);
+    color: white;
+    //width: fit-content;
+  }
+}

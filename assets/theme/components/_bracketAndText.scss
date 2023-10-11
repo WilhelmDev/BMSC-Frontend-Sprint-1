@@ -1,0 +1,14 @@
+.bracket-and-text {
+  &__bracket {
+    .bracket-banx__bracket, .bracket-banx__text1, .bracket-banx__text2 {
+      @media (min-width: 600px) {
+        font-size: 66px !important;
+      }
+    }
+  }
+  &__text {
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

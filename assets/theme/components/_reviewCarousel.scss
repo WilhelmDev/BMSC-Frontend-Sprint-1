@@ -1,0 +1,21 @@
+.review-carousel{
+  .v-carousel__controls{
+    .v-icon{
+      font-size: 12px !important;
+      color: $extra-green;
+    }
+    .v-btn--icon{
+      width: 10px;
+      height: 10px;
+      color: $extra-green;
+      margin: 0 6px;
+    }  
+    .v-btn--active:before{
+      opacity: 1 !important;
+    }
+  }
+  .review-content{
+    max-width: 600px;
+    margin: auto;
+  }
+}

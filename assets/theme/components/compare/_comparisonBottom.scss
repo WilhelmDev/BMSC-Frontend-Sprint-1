@@ -1,0 +1,12 @@
+.bm-comparison-bottom {
+    padding: 0px 0px 0px 12px;
+
+    .more-details {
+        color: $md-green;
+        font-weight: bold;
+      &.disabled {
+        color: $md-grey;
+        cursor: auto;
+      }
+    }
+}

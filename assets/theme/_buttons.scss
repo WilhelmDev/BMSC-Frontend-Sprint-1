@@ -1,0 +1,96 @@
+.theme--light.v-btn.v-size--default{
+  height: 54px;
+  text-transform: none;
+  font-family: $font-family-bold !important;
+  @include fontSize(18px);
+  line-height: 21px;
+  letter-spacing: 0.49px;
+  &.bm-light{
+    @include gradient(228.39deg, $light-button);
+    color: $white;
+  }
+  &.green-light{
+    @include gradient(228.39deg, $light-button);
+    color: $white;
+    padding: 0 25px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15) !important;
+    margin-top: 15px;
+  }
+  &.bm-sky-blue{
+    @include gradient(228.39deg, $sky-blue);
+    color: $white;
+  }
+  &.blue-light{
+    @include gradient(228.39deg, $sky-blue);
+    color: $white;
+  }
+  // S2
+  &.bm-yellow{
+    @include gradient(228.39deg, $yellow-button);
+    color: $white;
+  }
+  &.yellow{
+    @include gradient(228.39deg, $yellow-button);
+    padding: 0 25px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15) !important;
+    margin-top: 15px;
+    color: $white;
+  }
+  &.orange{
+    @include gradient(228.39deg, $orange-button);
+    padding: 0 25px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15) !important;
+    margin-top: 15px;
+    color: $white;
+  }
+  // S2
+  &.bm-medium{
+    @include gradient(228.39deg, $md-button);
+    color: $white;
+  }
+  &.bm-dark{
+    @include gradient(228.39deg, $dark-button);
+    color: $white;
+  }
+  &.bm-grey{
+    background-color: $grey-button !important;
+    color: $black;
+  }
+  .v-icon{
+    font-size: 24px;
+    padding-top: 4px;
+  }
+
+  @media (max-width: 600px) {
+    height: 48px;
+  }
+}
+.theme--light.v-btn-toggle {
+  height: 54px;
+  text-transform: none;
+  font-family: $font-family-bold !important;
+  line-height: 150%;
+  letter-spacing: 0.49px;
+  border-radius: 6px;
+  &:not(.v-btn-toggle--group) .v-btn.v-btn {
+    border-color: transparent !important;
+  }
+  .v-btn {
+    background-color: $greyF9 !important;
+    color: $black;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.05) !important;
+    border-style: hidden;
+    padding: 0px 80px;
+    height: 60px !important;
+    .v-btn__content {
+      @include fontSize(21px);
+    }
+  }
+  .v-btn--active {
+    @include gradient(228.39deg, $md-button);
+    color: $white;
+    &::before {
+      opacity: 0 !important;
+    }
+  }
+}

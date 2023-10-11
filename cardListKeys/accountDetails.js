@@ -1,0 +1,9 @@
+export const TITLE = "title";
+export const IMAGE = "image";
+export const DESCRIPTION = "description";
+export const FORM = "form";
+export const DISPLAY_PANEL= "display-panel";
+export const BENEFITS= "benefits";
+export const INFORMATION_PANEL= "information-panel";
+export const COUPONS= "coupons";
+export const COMPARE= "compare";

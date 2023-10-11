@@ -1,0 +1,57 @@
+.bm-compare {
+  background-color: $green-background;
+  border-radius: 8px;
+  margin-bottom: 100px;
+  @include respond-to('small'){
+    margin-bottom: 0px;
+  }
+  .compare-title {
+    color: $black;
+  }
+
+  .compare-content {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .button-compare {
+    margin: 0 auto;
+  }
+
+  .bottom {
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
+  .v-btn.v-size--default {
+    @media (max-width: 600px) {
+      margin: 6px 0;
+      min-width: 200px;
+    }
+  }
+
+  .top-image {
+    text-align: center;
+    // width: 27%;
+    max-width: 410px;
+    margin-top: -110px;
+  }
+
+  .credit-card-banx {
+    margin-top: -90px;
+    width: 100%;
+
+    @media (max-width: 960px) {
+      max-width: 100px;
+    }
+
+    @media (min-width: 960px) {
+      max-width: 240px;
+    }
+  }
+
+  &__banx {
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+}

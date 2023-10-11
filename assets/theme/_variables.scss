@@ -1,0 +1,78 @@
+$font-family-base: "uni_neuebook";
+$font-family-bold: "uni_neuebold";
+$font-family-heavy: "uni_neueheavy";
+$font-family-medium: "uni_neueregular";
+
+/* Main colors
+=============================== */
+
+$dark-green: #1D3D2C;
+$green: #296140;
+$gold: #050505;
+$extra-green: #A8D9BD;
+$light-green: #EFF5F0;
+$strong-light-green: #DAEFE0;
+$cream: #F9F4E5;
+$white: #FFFFFF;
+$dark-grey: #E3E8E5;
+$darker-grey: #C4C4C4;
+$smooth-green: #FCFFFC;
+$gold: #C99C62;
+
+/* Font colors
+=============================== */
+$black: #000000;
+$md-grey: #A0AAA5;
+$md-green: #0A8D43;
+$grey: #ECF2ED;
+$light-grey: #E4E4E4;
+$error-red: #E2231B;
+$footer-grey: #F1F1F1;
+$footer-green: #D5E6DC;
+$dark-red: #9C0235;
+
+
+/* Buttons colors
+=============================== */
+$light-button: #A7D342 6.77%, #8dbb52 98.08%;
+$sky-blue: #006098 6.91%, #0281CA 98.08%;
+$md-button: #3C7854 6.91%, #296140 98.08%;
+$dark-button: #2C5B42 6.77%, #1D3D2C 98.08%;
+$grey-button: $grey;
+// S2
+$yellow-button: #ffdb49 6.77%, #ffcd00 98.08%;
+$orange-button: #ea8b32 6.77%, #ee7502 98.08%;
+
+// S2
+
+
+
+/* Background colors
+=============================== */
+$bg-green: #DBF2E5;
+$bg-light-green: #EFF6F1;
+$bg-light-gold: #F9F4E5;
+$bg-grey: #E4E4E4;
+$bg-light-blue: #ECF6FB;
+$bg-light-red: #FCEFF3;
+// S2
+$bg-yellow: #fff2bd;
+// S2
+
+
+
+/* Gradient Backgrounds
+=============================== */
+$grey-gradient: #FCFDFF 0%, #EEF5F0 100%, #E0EAFC 100%;
+$green-gradient: #3C7854 6.91%, #296140 98.08%;
+$green-background: #E0EBE2;
+$green-blurred: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(60,120,84,0.4206057422969187) 100%);
+$light-green-gradient: linear-gradient(180deg, #FFFFFF 0%, #EFF5F0 36.98%, #EFF5F0 66.15%, #FFFFFF 100%);
+$gradient-light-blue: linear-gradient(180deg, #E3FFE6 0%, rgba(255, 255, 255, 0) 100%), #E7F5F8;
+
+$light-icon: #A7D342;
+$greyF9: #F9F9F9;
+
+/* Links colors
+=============== */
+$light-links: #5e5e5e;

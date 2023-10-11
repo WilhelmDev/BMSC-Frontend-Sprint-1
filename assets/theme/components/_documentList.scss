@@ -1,0 +1,11 @@
+.document-list {
+  .document-row {
+    background-color: $grey;
+    border-radius: 3px;
+    max-width: 60%;
+    height: 85px;
+    @media (max-width: 600px) {
+      min-width: 94%;
+    }
+  }
+}

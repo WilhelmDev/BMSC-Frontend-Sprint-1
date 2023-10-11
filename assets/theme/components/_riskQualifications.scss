@@ -1,0 +1,13 @@
+.risk-qualifications{
+  width: 800px;
+  margin: auto;
+  @include respond-to('small'){
+    width: 100%;
+  }
+  .title {
+    @include respond-to('small'){
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+}

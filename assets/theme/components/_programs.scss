@@ -1,0 +1,77 @@
+.bm-programs{
+  padding: 88px 0;
+  @include respond-to('small'){
+    padding-bottom: 40px !important;
+    padding-top: 20px !important;
+  }
+  .program-info{
+    margin-left: 10%;
+    @include respond-to('small'){
+      margin-left: 0px;
+      padding: 0 16px;
+    }
+  }
+  .program-title {
+    width: 64%;
+    color: $md-green;
+    @include respond-to('small'){
+      width: 100%;
+    }
+  }
+  .program-title:first-line{
+    color:$dark-green;
+  }
+  .program-content{
+    width: 60%;
+    @include respond-to('small'){
+      width: 100%;
+    }
+  }
+  .program-image1{
+    display: flex;
+    max-width: 50%;
+    @include respond-to('small'){
+      margin-top: 12px;
+      max-width: 100%;
+    }
+  }
+  .program-image2 {
+  .program-content-image2 {
+    margin: 0 auto;
+    width: 40%;
+    @include respond-to('small'){
+      width: 100%;
+    }
+  }
+  }
+  .box {
+    @media (max-width: 600px) {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: -15px !important;
+      margin-right: 15px !important;
+      max-width: 230px;
+    }
+  }
+
+  .box__span {
+    font-size: 19px !important;
+    font-style: normal;
+  }
+}
+
+.green-background {
+  background-color: $green-background;
+}
+
+.blurred-background {
+  background: $green-blurred;
+}
+
+.gradient-light-blue-background {
+  background: $gradient-light-blue;
+}
+
+.grey-green-background {
+  background-color: $grey;
+}

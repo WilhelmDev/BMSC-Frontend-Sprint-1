@@ -1,0 +1,139 @@
+/*Create rounded corners
+*******************************************/
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+  }
+  
+  /*Create top rounded corners
+  *******************************************/
+  @mixin top-border-radius($radius){
+  -webkit-border-radius: $radius $radius 0 0;
+  -moz-border-radius: $radius $radius 0 0;
+  -ms-border-radius: $radius $radius 0 0;
+  border-radius: $radius $radius 0 0;
+  }
+  
+  /*Transitions cross browser
+  *******************************************/
+  @mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+  }
+  
+  /*Transform cross browser
+  *******************************************/
+  @mixin transform($transforms) {
+      -webkit-transform: $transforms;
+      -moz-transform: $transforms;
+      -ms-transform: $transforms;
+      transform: $transforms;
+  }
+  
+  /*Transform-origin cross browser
+  *******************************************/
+  @mixin transform-origin ($origin) {
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  transform-origin: $origin;
+  }
+  @function is-important($important){
+    @return #{if($important, '!important', '')};
+  }
+  
+  /*Gradient cross browser
+  *******************************************/
+  @mixin gradient($direction, $list, $important: false) { 
+    background: -webkit-linear-gradient($direction, $list) is-important($important);
+    background: -moz-linear-gradient($direction, $list) is-important($important);
+    background: -o-linear-gradient($direction, $list) is-important($important);
+    background: linear-gradient($direction, $list) is-important($important);  
+  }
+  
+  /*Placeholder cross browser
+  *******************************************/
+  @mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+  }
+  
+  /*Opacity cross browser
+  *******************************************/
+  @mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie);
+  }
+  // Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+  $remSize: $size / 17px;
+//Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+  
+/*Calc function cross browser
+*******************************************/
+@mixin calc-dynamic($property, $expression, $important: "") {
+  @if $important == "!important" {
+    $property: -moz-calc(#{$expression}) !important;
+    $property: -o-calc(#{$expression}) !important;
+    $property: -webkit-calc(#{$expression}) !important;
+    $property: calc(#{$expression}) !important;
+  } @else {
+    $property: -moz-calc(#{$expression});
+    $property: -o-calc(#{$expression});
+    $property: -webkit-calc(#{$expression});
+    $property: calc(#{$expression});
+  }
+}
+
+/*Box shadow cross browser
+*******************************************/
+// Box shadows
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;       
+          box-shadow: $shadow;
+}
+
+/*Breackpoints bootstrap default media sizes
+*******************************************/
+$breakpoints: (
+  'x-small': (max-width:  600px ),
+  'small':  ( max-width:  960px ),
+  'medium': ( max-width:  1264px ),
+  'large':  ( max-width: 1904px )
+) !default;
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

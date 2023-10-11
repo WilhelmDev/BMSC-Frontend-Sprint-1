@@ -1,0 +1,32 @@
+.bm-price-label {
+    &--big {
+        width: 182px;
+        .label {
+            font-size: 15px;
+        }
+        .price {
+            font-size: 40px;
+            color: $md-green;
+        }
+    }
+    &--medium {
+        width: 140px;
+        .label {
+            font-size: 14px;
+        }
+        .price {
+            font-size: 34px;
+            color: $md-green;
+        }
+    }
+    &--small {
+        width: 120px;
+        .label {
+            font-size: 13px;
+        }
+        .price {
+            font-size: 31px;
+            color: $md-green;
+        }
+    }
+}

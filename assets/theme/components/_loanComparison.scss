@@ -1,0 +1,16 @@
+.bm-loan-comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    .divider {
+        margin: 100px;
+        margin-bottom: 50px;
+    }
+    .simulator-cta-ctn {
+        position: relative;
+        top: -60px
+    }
+}

@@ -1,0 +1,18 @@
+.accounts-banx {
+  &__card-info {
+    background: linear-gradient(#FCFDFF, #E7F5F8);
+  }
+
+  &__white-background {
+    background-color: white !important;
+  }
+
+  &__img {
+    width: 100px;
+    margin: 0 auto;
+
+    @media (max-width: 600px) {
+      margin: 0;
+    }
+  }
+}

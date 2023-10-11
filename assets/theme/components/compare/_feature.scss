@@ -1,0 +1,27 @@
+.bm-compare-feature {
+    max-width: 100%;
+    .icon-ctn {
+        width: 30px;
+        height: 30px;
+        .icon-shield, .icon-close {
+            margin-top: 4px;
+            margin-left: -2px;
+        }
+        .icon-shield {
+            color: $md-green;
+        }
+    }
+    .icon-ctn.shield {
+        background: $strong-light-green;
+    }
+    .icon-ctn.close {
+        background: $dark-grey;
+    }
+    .feature-name {
+        margin-left: 10px;
+    }
+    .feature-description {
+        font-size: 12px;
+        font-family: $font-family-base;
+    }
+}

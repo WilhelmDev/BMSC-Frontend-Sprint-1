@@ -1,0 +1,24 @@
+.bm-image-card {
+  position: relative;
+  height: 100%;
+
+  .image-container {
+    border-radius: 4px;
+    height: 100%;
+
+    .v-image {
+      height: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  .card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .link {
+    letter-spacing: 0.5px;
+  }
+}

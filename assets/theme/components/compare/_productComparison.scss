@@ -1,0 +1,56 @@
+.bm-product-comparison {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .compare {
+        &--main-section {
+            width: 100%;
+            background: $light-green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 200px;
+            padding-top: 60px;
+        }
+
+        &--main-body {
+            width: 100%;
+        }
+    }
+    .group-name {
+        color: $md-grey;
+    }
+    .v-text-field {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .v-list-item__action {
+      caret-color: $md-green !important;
+      .v-simple-checkbox {
+        caret-color: $md-green !important;
+      }
+    }
+
+  .v-input--checkbox{
+    margin-top: 0;
+    .v-messages{
+      display: none;
+    }
+    .mdi-checkbox-marked{
+      color: $md-green;
+    }
+    .v-input--selection-controls__input{
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+.v-list-item--link::before { background-color: transparent; color: black }
+.v-list .v-list-item--active {
+  background-color: white !important;
+}
+.v-list .v-list-item--active .v-list-item__title {
+  color: black !important;
+}

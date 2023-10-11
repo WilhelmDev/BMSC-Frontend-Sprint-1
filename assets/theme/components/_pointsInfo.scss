@@ -1,0 +1,35 @@
+
+.points-card:last-child{
+  p::before{
+    content: none;
+  }
+  .list-actions{
+    display: block;
+    text-align: center;
+  }
+}
+.list-actions{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 32px;
+  text-align: left;
+  @include respond-to('small'){
+    grid-template-columns: 1fr;
+  }
+  p::before{
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: $light-icon;
+    position: absolute;
+    margin-left: -32px;
+    margin-top: 8px;
+  }
+}
+.contact-list{
+  display: flex;
+  justify-content: center;
+  div + div{
+    border-left: 1px solid $extra-green;
+  }
+}

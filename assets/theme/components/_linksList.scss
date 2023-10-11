@@ -1,0 +1,9 @@
+.link-list {
+  width: fit-content;
+  .list {
+    list-style: none;
+    li {
+      border-bottom: 0.4px solid $white;
+    }
+  }
+}

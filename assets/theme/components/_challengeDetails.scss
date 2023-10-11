@@ -1,0 +1,82 @@
+.challenge-details {
+  &__box {
+    .box__span{
+      margin: 0 auto;
+      font-size: 60px;
+      font-style: initial;
+    }
+  }
+  &__introductionData-subTitle {
+    .bracket-banx__text1 {
+      p {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: -0.25px;
+      }
+    }
+  }
+
+  &__box-and-image {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+  }
+
+  &__description-title {
+    color: $md-green;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  &__description-subTitle {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  &__date-box {
+    .box__span{
+      margin: 0 auto;
+      font-size: 15px;
+      font-style: initial;
+
+      p {
+        margin: 7px 0;
+      }
+    }
+  }
+
+  &__challenge-steps{
+    margin: 0 auto;
+
+    .bracket-banx {
+      text-align: center;
+      &__bracket, &__text1, &__text2 {
+        font-size: 32px !important;
+
+        @media (max-width: 600px) {
+          font-size: 26px !important;
+        }
+      }
+    }
+  }
+
+  &__award {
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+.bracket-banx__bracket, .bracket-banx__text1 {
+  font-size: 25px;
+}
+}

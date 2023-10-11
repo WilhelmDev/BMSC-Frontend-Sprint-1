@@ -1,0 +1,120 @@
+.bm-footer{
+  .cotization-bar{
+    background: $footer-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    @media (max-width: 768px) {
+      font-size: 12px !important;
+    }
+  }
+
+  .sheet-carousel-lg {
+    display: none;
+    @media (min-width: 736px) {
+      display: block;
+    }
+  }
+  .sheet-carousel-sm {
+    display: none;
+    @media (max-width: 735px) and (min-width: 410px) {
+      display: block;
+    }
+  }
+  .sheet-carousel-movil {
+    display: none;
+    @media (max-width: 409px) {
+      display: block;
+    }
+  }
+  .slider {
+    .slide {
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .w-155 {
+      width: 155px;
+      @media (max-width: 768px) {
+        width: 135px;
+      }
+    }
+    .w-170 {
+      width: 170px;
+      @media (max-width: 768px) {
+        width: 150px;
+      }
+    }
+    .w-185 {
+      width: 185px;
+      @media (max-width: 768px) {
+        width: 165px;
+      }
+    }
+    .w-190 {
+      width: 190px;
+      @media (max-width: 768px) {
+        width: 170px;
+      }
+    }
+    .w-200 {
+      width: 200px;
+      @media (max-width: 768px) {
+        width: 180px;
+      }
+    }
+    .w-230 {
+      width: 230px;
+      @media (max-width: 768px) {
+        width: 210px;
+      }
+    }
+    .w-235 {
+      width: 235px;
+      @media (max-width: 768px) {
+        width: 215px;
+      }
+    }
+    .w-255 {
+      width: 255px;
+      @media (max-width: 768px) {
+        width: 235px;
+      }
+    }
+  }
+  .px-slider {
+    padding: 0 32px;
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+  }
+  .footer-content{
+    background-color: $dark-green;
+    color: $footer-grey;
+    padding: 52px 8%;
+    small{
+      display: block;
+      color: $footer-grey;
+      padding: 8px 0;
+    }
+    .regular-text{
+      color: $footer-grey;
+    }
+    .v-image + .v-image {
+      margin-top: 40px;
+    }
+  }
+  .footer-bar{
+    background-color: $green;
+    font-size: 14px;
+    line-height: 15px;
+    .small{
+      color: $footer-green;
+    }
+    .v-icon{
+      color: $white;
+    }
+  }
+}

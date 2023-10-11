@@ -1,0 +1,26 @@
+.history-panel{
+  max-width: 800px;
+  margin: auto;
+  .v-timeline{
+    padding-top: 0;
+  }
+  .v-timeline:before{
+    width: 1px;
+  }
+  .v-timeline-item__inner-dot{
+    h5{
+      background: $white;
+      margin-top: 4px;
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .v-timeline::before {
+    top: 20px;
+    height: calc(100% - 120px)
+  }
+  .v-timeline-item__divider {
+    z-index: 1;
+  }
+}

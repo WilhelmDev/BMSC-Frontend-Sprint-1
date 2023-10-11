@@ -1,0 +1,52 @@
+.estate-description-carousel{
+  background-color: white;
+  .v-window__next, .v-window__prev, .v-window__next:hover, .v-window__prev:hover{
+    background-color: transparent;
+    @media (max-width: 600px) {
+      display: none;
+    }
+    .v-icon{
+      color: $light-grey;
+      font-size: 40px !important;
+    }
+    .v-btn:not(.v-btn--text):not(.v-btn--outlined):hover:before,
+    .v-btn:not(.v-btn--text):not(.v-btn--outlined):focus:before{
+      opacity: 0;
+    }
+    .v-ripple__container{
+      display: none;
+    }
+  }
+  .v-carousel__controls{
+    .v-icon{
+      font-size: 12px !important;
+      color: $extra-green;
+    }
+    .v-btn--icon{
+      width: 10px;
+      height: 10px;
+      color: $extra-green;
+      margin: 0 6px;
+    }
+    .v-btn--active:before{
+      opacity: 1 !important;
+    }
+  }
+  .v-carousel__item{
+    //height: auto !important;
+  }
+  .details-card {
+    .left-container {
+      min-width: 50%;
+    }
+    .image-container {
+      max-width: 50%;
+      @media (max-width: 959px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.v-carousel__controls {
+  padding-top: 10px;
+}

@@ -1,0 +1,32 @@
+.v-text-field.bm-text-field{
+  .v-input__slot{
+    box-shadow: none !important;
+    background: $white;
+    border: 2px solid #DDE9DF;
+    border-radius: 6px; 
+  }
+}
+.v-text-field__slot{
+  input{
+    border: none;
+  }
+}
+
+/*Checkboxes*/
+.v-input--checkbox{
+  margin-top: 0;
+  .v-messages{
+    display: none;
+  }
+  .mdi-checkbox-marked{
+    color: $md-green;
+  }
+  .v-input--selection-controls__input{
+    height: 18px;
+    width: 18px;
+  }
+}
+.v-application .bm-radio--text{
+  color: $md-green !important;
+  caret-color: $md-green !important;
+}

@@ -1,0 +1,220 @@
+.comModal {
+  .height-cupon {
+    min-height: 100px!important;
+    @media (max-width: 999px) and (min-width: 959px) {
+      max-height: 760px!important;
+    }
+    @media (max-width: 960px) and (min-width: 739px) {
+      max-height: 430px!important;
+    }
+    @media (max-width: 740px) {
+      max-height: 660px!important;
+    }
+    @media (max-width: 960px) and (max-height: 500px){
+      max-height: 330px!important;
+    }
+    @media (max-width: 960px) and (min-height: 500px){
+      max-height: 670px!important;
+    }
+  }
+  .cupon {
+    .v-pagination__navigation .v-icon {
+      transition: 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+      vertical-align: middle;
+      color: $md-grey;
+    }
+  }
+  .height-communication {
+    min-height: 100px!important;
+    @media (max-width: 999px) and (min-width: 959px) {
+      max-height: 760px!important;
+    }
+    @media (max-width: 960px) and (min-width: 739px) {
+      max-height: 430px!important;
+    }
+    @media (max-width: 740px) and (min-width: 520px) {
+      max-height: 530px!important;
+    }
+    @media (max-width: 521px) and (min-width: 370px) {
+      max-height: 700px!important;
+    }
+  }
+
+  .modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: table;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  .modal-container {
+    width: 50%;
+    height: auto;
+    @include respond-to('small'){
+      height: 90%;
+      width: 90%;
+      overflow-y: scroll;
+    }
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .modal-header h3 {
+    margin-top: 0;
+    color: #42b983;
+  }
+
+  .modal-body {
+    margin: 20px 0;
+  }
+
+  .modal-default-button {
+    float: right;
+  }
+
+  /*
+   * The following styles are auto-applied to elements with
+   * transition="modal" when their visibility is toggled
+   * by Vue.js.
+   *
+   * You can easily play with the modal transition by editing
+   * these styles.
+   */
+
+  .modal-enter {
+    opacity: 0;
+  }
+
+  .modal-leave-active {
+    opacity: 0;
+  }
+
+  .modal-enter .modal-container,
+  .modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  &__bank-logo {
+    height: 100%;
+    width: 300px;
+    margin-left: -33px;
+    margin-top: -23px;
+    @include respond-to('small'){
+      width: 150px;
+    }
+  }
+
+  &__close-icon {
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-family: $font-family-base;
+    text-align: justify;
+    text-justify: inter-word;
+    @include respond-to('small'){
+      font-size: 14px;
+    }
+  }
+
+  &__text-small {
+    font-size: 14px;
+    font-family: $font-family-base;
+    text-align: justify;
+    text-justify: inter-word;
+    @include respond-to('small'){
+      font-size: 13px;
+    }
+  }
+
+  &__file-link {
+    font-size: 18px;
+    font-family: $font-family-bold;
+    text-decoration: underline;
+    cursor: pointer;
+    @include respond-to('small'){
+      font-size: 15px;
+    }
+  }
+  &__number {
+    font-family: $font-family-bold;
+  }
+
+  &__bold {
+    font-family: $font-family-bold;
+  }
+
+  &__computer {
+    width: 100%;
+    height: auto;
+  }
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  #coupon-scroll{
+    min-height: 220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: rgba(160, 172, 182, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    @media (max-width: 768px) {
+      min-height: 110px;
+    }
+    &::-webkit-scrollbar {
+      overflow-y: scroll;
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:vertical {
+      width:10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(160, 172, 182, .5);
+      border-radius: 20px;
+      border: 2px solid #f1f2f3;
+    }
+    .border-row {
+      border-bottom: 1px solid $darker-grey;
+    }
+  }
+
+  .divider-col {
+    border-left: 1px solid $darker-grey;
+    @include respond-to('small'){
+      border-left: none;
+    }
+  }
+  .text-field{
+    &.v-text-field > .v-input__control > .v-input__slot {
+      min-height: 42px!important;
+      input{
+        font-size: 18px;
+      }
+    }
+    &.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot fieldset {
+      border: 2px solid #ECF2ED;
+    }
+  }
+}

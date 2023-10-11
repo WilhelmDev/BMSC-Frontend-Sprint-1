@@ -1,0 +1,40 @@
+.filter-buttons {
+  .theme--light.v-btn-toggle {
+    .v-btn {
+      height: 35px !important;
+      background-color: transparent !important;
+      color: $md-grey;
+      border: 1px solid $md-grey;
+      padding: 0px 30px;
+      margin-right: 13px;
+      border-left-width: 1px !important;
+      border-radius: 4px;
+      box-shadow: none !important;
+      .v-btn__content {
+        @include fontSize(18px);
+      }
+      &:not(:first-child) {
+        border-left-width: 1px;
+        border-radius: 4px;
+      }
+      &:first-child {
+        border-radius: 4px;
+      }
+      @media (max-width: 600px) {
+        padding: 0 16px;
+      }
+    }
+    .v-btn--active {
+      background-color: $light-icon !important;
+      background: none;
+      border-style: hidden;
+      color: $white;
+      &::before {
+        opacity: 0;
+      }
+      &.color-green {
+        background-color: $green !important;
+      }
+    }
+  }
+}

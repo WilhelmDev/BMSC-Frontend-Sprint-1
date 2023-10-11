@@ -1,0 +1,29 @@
+.bracket-banx {
+  &__bracket {
+    display: initial;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  &__text1 {
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  &__text2 {
+    font-family: $font-family-base;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  p {
+    display: contents;
+  }
+}

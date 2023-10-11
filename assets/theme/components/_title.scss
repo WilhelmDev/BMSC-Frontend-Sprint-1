@@ -1,0 +1,13 @@
+.page-title{
+  width: 60%;
+  @include respond-to('small'){
+    width: 100%;
+  }
+  .v-image{
+    width: 120px;
+    height: auto;
+    @include respond-to('small'){
+      width: 60px;
+    }
+  }
+}

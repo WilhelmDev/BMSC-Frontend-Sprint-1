@@ -1,0 +1,66 @@
+.bm-header-mobile {
+    background-color: $white;
+
+    .tabs-modal {
+        .close-icon-ctn {
+            text-align: right;
+        }
+    }
+    .v-expansion-panel-header {
+        color: $black;
+        font-family: 'uni_neueheavy';
+        font-size: 14px;
+        line-height: 16px;
+
+        &--active {
+            color: $md-green;
+        }
+    }
+  .header-logo {
+    max-width: 200px;
+  }
+    .v-list-item {
+        font-family: 'uni_neuebold';
+        font-size: 14px;
+        line-height: 16px;
+        color: $dark-green;
+
+        margin-bottom: 30px;
+        margin: 0px 16px;
+    }
+
+    .optional-btn {
+        height: 36px;
+        @include fontSize(17px);
+        border: 1px solid $md-grey;
+        filter: drop-shadow(0px 2px 20px rgba(165, 211, 61, 0.1));
+        border-radius: 4px;
+        &::after {
+          content: "";
+          width: 13px;
+          height: 13px;
+          background-color: $light-icon;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          border-radius: 50%;
+        }
+    }
+    .v-image__image {
+      &.v-image__image--cover {
+        filter: brightness(100%);
+      }
+    }
+    p {
+      margin-bottom: 0px;
+    }
+    .v-toolbar__content {
+      padding-left: 0px;
+      padding-right: 16px;
+      padding-top: 0px;
+      padding-top: 0px;
+    }
+  .v-sheet.v-toolbar{
+    box-shadow: none;
+  }
+}

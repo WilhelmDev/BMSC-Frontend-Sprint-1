@@ -1,0 +1,18 @@
+.bm-more-info {
+  .theme--light.v-icon {
+    color: $light-icon;
+    font-size: 45px;
+  }
+  .info-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    .v-card{
+      padding: 16px 20px 16px 8px;
+      box-shadow: 0px 5px 20px rgb(41 97 64 / 15%);
+    }
+    @include respond-to('small'){
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.bm-expansion-panel {
+  .v-expansion-panel {
+    &-content__wrap {
+      padding-left: 0;
+    }
+  }
+  .more-info {
+    .strong-small-text {
+      line-height: 19.6px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../variables';
+
+.style-title {
+  &:link {
+    color: $black!important;
+  }
+  &:hover {
+    color: $light-links!important;
+  }
+  &:visited {
+    color: $light-links!important;
+  }
+}
+.style-name {
+  &:link {
+    color: $green!important;
+  }
+  &:hover {
+    color: $light-icon!important;
+  }
+  &:visited {
+    color: $light-icon!important;
+  }
+}
